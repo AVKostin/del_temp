@@ -20,5 +20,14 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "workbench.tree.renderIndentGuides": "always",
+  "cSpell.languageSettings": [
+
+
+
+  ],
+  "cSpell.language": "en,ru",
+  "auto-close-tag.SublimeText3Mode": true
 }
