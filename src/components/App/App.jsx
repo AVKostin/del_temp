@@ -4,7 +4,7 @@ import Section from '../Section';
 import Statistics from '../Statistics';
 import Feedback from '../Feedback';
 import Notification from '../Notification';
-// import Dropdown from '../Dropdown';
+// import ResetBtn from '../ResetBtn';
 
 class App extends Component {
   static defaultProps = {};
@@ -51,10 +51,7 @@ class App extends Component {
     return (
       <Wrapper>
         <Section title="Please leave feedback">
-          <Feedback
-            options={names}
-            onLeaveFeedback={this.onLeaveFeedback}
-          />
+          <Feedback options={names} onLeaveFeedback={this.onLeaveFeedback} />
         </Section>
 
         <Section title="Statistics">
@@ -65,10 +62,11 @@ class App extends Component {
               bad={bad}
               total={this.countTotalFeedback()}
               positivePercentage={this.countPositiveFeedbackPercentage()}
-            />) : (<Notification message="No  feedback given" />
+            />
+          ) : (
+            <Notification message="No  feedback given" />
           )}
-        {/* <Dropdown /> */}
-
+          {/* <ResetBtn /> */}
         </Section>
       </Wrapper>
     );
