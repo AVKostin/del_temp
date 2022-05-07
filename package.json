@@ -54,6 +54,6 @@
   },
   "lint-staged": {
     "*.{js,jsx}": "eslint --cache --fix",
-    "*.{js,css,md,jsx,sass}": "prettier --write",
+    "*.{js,css,md,jsx,sass}": "prettier --write"
   }
 }
