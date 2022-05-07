@@ -1,9 +1,9 @@
 import { Component } from 'react';
 import { Wrapper } from './App.styled';
-import Section from '../Section';
-import Statistics from '../Statistics';
-import Feedback from '../Feedback';
-import Notification from '../Notification';
+import Section from '../Section/Section';
+import Statistics from '../Statistics/Statistics';
+import Feedback from '../Feedback/Feedback';
+import Notification from '../Notification/Notification';
 // import ResetBtn from '../ResetBtn';
 
 class App extends Component {
@@ -33,16 +33,6 @@ class App extends Component {
       [name]: prevState[name] + 1,
     }));
   };
-
-  // resetForm = e => {
-  //   const state = New name{
-  //         good: 0,
-  //         neutral: 0,
-  //         bad: 0,
-  //       }
-
-  //     }));
-  //   };
 
   render() {
     const { good, neutral, bad } = this.state;
