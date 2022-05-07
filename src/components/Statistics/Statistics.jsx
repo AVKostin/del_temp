@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { StatisticsList, StatisticsItem } from './Statistics.styled';
-import ResetBtn from '../ResetBtn';
+// import ResetBtn from '../ResetBtn';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
   <StatisticsList>
@@ -23,16 +23,16 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
     <StatisticsItem>
       <span>Positive feedback: {positivePercentage}</span> %
     </StatisticsItem>
-    <ResetBtn />
+    {/* <ResetBtn /> */}
   </StatisticsList>
 );
 
 Statistics.propTypes = {
-    good: PropTypes.number.isRequired,
-    neutral: PropTypes.number.isRequired,
-    bad: PropTypes.number.isRequired,
-    total: PropTypes.number.isRequired,
-    positivePercentage: PropTypes.number.isRequired,
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
 };
 
 export default Statistics;
