@@ -2,6 +2,7 @@
   "name": "goit-react-hw-02-feedback",
   "version": "0.1.0",
   "private": true,
+  "main": "index.js",
   "homepage": "https://avkostin.github.io/goit-react-hw-02-feedback",
   "dependencies": {
     "@emotion/react": "^11.9.0",
