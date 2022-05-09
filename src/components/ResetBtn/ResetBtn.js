@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import countTotalFeedback from '../App';
-// import './ResetBtn.css';
 
 class ResetBtn extends Component {
   state = {
@@ -20,7 +19,6 @@ class ResetBtn extends Component {
       <div className="ResetBtn">
         <button
           type="button"
-          // className="Dropdown__toggle"
           onClick={() => {
             countTotalFeedback(state);
           }}
