@@ -4,7 +4,6 @@ import Section from '../Section/Section';
 import Statistics from '../Statistics/Statistics';
 import Feedback from '../Feedback/Feedback';
 import Notification from '../Notification/Notification';
-// import ResetBtn from '../ResetBtn';
 
 class App extends Component {
   static defaultProps = {};
@@ -56,7 +55,6 @@ class App extends Component {
           ) : (
             <Notification message="No  feedback given" />
           )}
-          {/* <ResetBtn /> */}
         </Section>
       </Wrapper>
     );
