@@ -1,12 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import 'modern-normalize/modern-normalize.css';
-import App from './components/App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "modern-normalize/modern-normalize.css";
+import App from "./components/App";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
 );
