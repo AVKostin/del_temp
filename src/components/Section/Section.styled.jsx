@@ -1,12 +1,11 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  &:not(:last-child) {
-    padding-bottom: 40px;
+    &:not(:last-child) {
+      padding-bottom: 40px;
   }
 `;
 
