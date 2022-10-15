@@ -1,8 +1,8 @@
 import { Component } from 'react';
 import { Wrapper } from './App.styled';
 import Section from '../Section/Section';
-import Statistics from '../Statistics/Statistics';
 import Feedback from '../Feedback/Feedback';
+import Statistics from '../Statistics/Statistics';
 import Notification from '../Notification/Notification';
 
 class App extends Component {
@@ -17,7 +17,6 @@ class App extends Component {
 
   countTotalFeedback = () => {
     const { good, neutral, bad } = this.state;
-
     return good + neutral + bad;
   };
 
@@ -36,13 +35,11 @@ class App extends Component {
   render() {
     const { good, neutral, bad } = this.state;
     const names = Object.keys(this.state);
-
     return (
       <Wrapper>
         <Section title="Please leave feedback">
           <Feedback options={names} onLeaveFeedback={this.onLeaveFeedback} />
         </Section>
-
         <Section title="Statistics">
           {this.countTotalFeedback() ? (
             <Statistics
@@ -60,5 +57,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
